@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.16)
 project(mav_msgs)
 
 find_package(catkin REQUIRED message_generation std_msgs geometry_msgs trajectory_msgs nav_msgs)
@@ -14,8 +14,6 @@ else()
   # ROS > Indigo.
   set(EIGEN3_INCLUDE_DIRS ${EIGEN3_INCLUDE_DIR})
 endif()
-
-add_definitions(-std=c++11)
 
 add_message_files(
   FILES
